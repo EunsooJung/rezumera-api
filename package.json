@@ -8,10 +8,9 @@
     "npm": "6.0.1"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server\" \"npm run webhook\"",
-    "webhook": "./sendgrid_webhook.sh"
+    "dev": "concurrently \"npm run server\" \"npm run webhook\""
   },
   "author": "",
   "license": "ISC",
