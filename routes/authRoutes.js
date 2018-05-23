@@ -17,6 +17,7 @@ module.exports = app => {
         (req, res) => {
             // res.redirect('https://resumera.herokuapp.com/home');
             console.log(res)
+            res.send(res.user)
         }
     );
 
