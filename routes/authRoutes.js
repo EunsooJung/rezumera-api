@@ -15,7 +15,8 @@ module.exports = app => {
         '/auth/google/callback',
         passport.authenticate('google'),
         (req, res) => {
-            res.redirect('https://resumera.herokuapp.com/home');
+            // res.redirect('https://resumera.herokuapp.com/home');
+            console.log(res)
         }
     );
 
